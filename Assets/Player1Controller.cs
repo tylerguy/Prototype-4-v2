@@ -5,8 +5,7 @@ using UnityEngine;
 public class Player1Controller : MonoBehaviour
 {
     public float speed = 10.0f;
-
-    public Camera cam;
+    public float rotationSpeed = 100.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +22,13 @@ public class Player1Controller : MonoBehaviour
         {
             transform.Translate(Vector3.back * speed * Time.deltaTime);
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
         }
     }
 }
