@@ -21,6 +21,6 @@ public class DoorButton : MonoBehaviour
     {
         Debug.Log("Player " + other.gameObject.name + " has pressed a button!");
         // open door
-        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 2, door.transform.position.z);
+        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 3, door.transform.position.z);
     }
 }

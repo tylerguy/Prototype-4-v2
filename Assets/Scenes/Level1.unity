@@ -478,6 +478,10 @@ PrefabInstance:
       propertyPath: platform
       value: 
       objectReference: {fileID: 1606567765}
+    - target: {fileID: 279189684955853299, guid: 824d68e66f658104e81fb3243108b517, type: 3}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 1606567765}
     - target: {fileID: 2423728986672008886, guid: 824d68e66f658104e81fb3243108b517, type: 3}
       propertyPath: m_Name
       value: Player2Button
@@ -512,7 +516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8005094171008320832, guid: 824d68e66f658104e81fb3243108b517, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8005094171008320832, guid: 824d68e66f658104e81fb3243108b517, type: 3}
       propertyPath: m_LocalPosition.x
@@ -562,7 +566,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25028
+  m_Name: pb_Mesh28516
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -766,7 +770,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!136 &518311476
 CapsuleCollider:
@@ -935,7 +939,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-46242
+  m_Name: pb_Mesh28576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1252,7 +1256,7 @@ GameObject:
   - component: {fileID: 1063293007}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20799,7 +20803,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-6892
+  m_Name: pb_Mesh28624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21268,7 +21272,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-47382
+  m_Name: pb_Mesh28412
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21481,7 +21485,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2134757772}
-  - component: {fileID: 2134757771}
   m_Layer: 0
   m_Name: EventManager
   m_TagString: Untagged
@@ -21489,19 +21492,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2134757771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134757770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43a3735cbf5b9694ebc5ced8abaf2f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lastCheckPoint: {fileID: 0}
 --- !u!4 &2134757772
 Transform:
   m_ObjectHideFlags: 0

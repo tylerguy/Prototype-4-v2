@@ -92,7 +92,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141024432561419935}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8005094171008320832}
-  - component: {fileID: -8749333706111106005}
+  - component: {fileID: 279189684955853299}
   m_Layer: 0
   m_Name: Player2Button
   m_TagString: Untagged
@@ -130,7 +130,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8749333706111106005
+--- !u!114 &279189684955853299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2423728986672008886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff3ca963491b6d4fba4d322d453df99, type: 3}
+  m_Script: {fileID: 11500000, guid: eb5e0ee7fa7149248ab54fa818a4297d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   platform: {fileID: 0}
