@@ -80,8 +80,6 @@ public class Player2Controller : MonoBehaviour
         Vector3 direction = new Vector3(move.x, 0, move.y);
         Vector3 rotation = new Vector3(0, look.x, 0);
 
-        Debug.Log(rotation);
-
         cam.transform.Rotate(-look.y * rotationSpeed * Time.deltaTime, 0, 0);
 
         transform.Rotate(rotation * rotationSpeed * Time.deltaTime);
