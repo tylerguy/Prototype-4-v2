@@ -7,14 +7,15 @@ public class Platform : MonoBehaviour
     public float speed = 0.5f;
     public bool isMoving = false;
 
-    public Transform[] waypoints;
+    public Rigidbody rb;
 
     private int currentWaypoint = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = waypoints[currentWaypoint].transform.position;
+        rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
@@ -22,16 +23,20 @@ public class Platform : MonoBehaviour
     {
         if (isMoving)
         {
-            // move between waypoints
-            if (transform.position == waypoints[currentWaypoint].transform.position)
+            if (currentWaypoint < GameObject.Find("waypointManager").GetComponent<waypointManager>().waypoints.Length)
             {
-                currentWaypoint++;
-                if (currentWaypoint >= waypoints.Length)
+                Vector3 target = GameObject.Find("waypointManager").GetComponent<waypointManager>().waypoints[currentWaypoint];
+                Vector3 direction = target - transform.position;
+                rb.velocity = direction.normalized * speed;
+                if (Vector3.Distance(transform.position, target) < 0.1f)
                 {
-                    currentWaypoint = 0;
+                    currentWaypoint++;
                 }
             }
-            transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, speed * Time.deltaTime);
+            else
+            {
+                currentWaypoint = 0;
+            }
         }
     }
 }
