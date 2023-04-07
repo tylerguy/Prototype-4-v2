@@ -8,7 +8,6 @@ public class DoorButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -17,10 +16,11 @@ public class DoorButton : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Player " + other.gameObject.name + " has pressed a button!");
+        Debug.Log("Player " + collision.gameObject.name + " has pressed a button!");
         // open door
-        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 3, door.transform.position.z);
+        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 3.5f, door.transform.position.z);
     }
+
 }
