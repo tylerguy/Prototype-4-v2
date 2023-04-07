@@ -19,8 +19,20 @@ public class DoorButton : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Player " + collision.gameObject.name + " has pressed a button!");
-        // open door
-        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 3.5f, door.transform.position.z);
+        // get current color of door
+        Color currentColor = door.GetComponent<MeshRenderer>().material.color;
+        // make the door transparent
+        door.GetComponent<MeshRenderer>().material.color = new Color(currentColor.r, currentColor.g, currentColor.b, 0.5f);
+        // change the door's layer to "Player 1" if the door was blue and "Player 2" if the door was red
+        if (currentColor == Color.blue)
+        {
+            door.layer = 6;
+        }
+        else if (currentColor == Color.red)
+        {
+            door.layer = 7;
+        }
+
     }
 
 }
