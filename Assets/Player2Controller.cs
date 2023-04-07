@@ -90,6 +90,7 @@ public class Player2Controller : MonoBehaviour
             {
                 GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
                 isGrounded = false;
+                jump = false;
             }
         }
     }
