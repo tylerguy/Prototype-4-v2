@@ -58214,6 +58214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorButton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4534742027535611403, guid: 24362845d4b471d4294a691d30821af6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deddb1a8b1ff5684ab5fa2bab594cb37, type: 2}
     - target: {fileID: 4742300272199145331, guid: 24362845d4b471d4294a691d30821af6, type: 3}
       propertyPath: door
       value: 
@@ -60483,7 +60487,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43392
+  m_Name: pb_Mesh25474
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -61415,7 +61419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh43288
+  m_Name: pb_Mesh25344
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
