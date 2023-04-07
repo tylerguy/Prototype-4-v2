@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player1Button : MonoBehaviour
 {
     public GameObject platform;
+    public bool active = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Player1Button : MonoBehaviour
         Debug.Log("Player " + other.gameObject.name + " has pressed a button!");
         if (other.gameObject.tag == "Player 1")
         {
+            active = true;
             // get waypoint manager attached to platform
             WaypointManager waypointManager = platform.GetComponent<WaypointManager>();
             // set waypoint manager to active
@@ -38,6 +40,7 @@ public class Player1Button : MonoBehaviour
         Debug.Log("Player " + other.gameObject.name + " has left a button!");
         if (other.gameObject.tag == "Player 1")
         {
+            active = false;
             // get waypoint manager attached to platform
             WaypointManager waypointManager = platform.GetComponent<WaypointManager>();
             // set waypoint manager to inactive
