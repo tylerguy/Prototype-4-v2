@@ -153,9 +153,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7358833665133029242}
   - component: {fileID: 1082079845}
-  - component: {fileID: 3367747694459424057}
+  - component: {fileID: 5805904388967827995}
   m_Layer: 0
-  m_Name: Two Player Button
+  m_Name: Two Player Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,7 +191,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.5, z: 2}
   m_Center: {x: -10.6, y: 0, z: -2.9}
---- !u!114 &3367747694459424057
+--- !u!114 &5805904388967827995
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,12 +200,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5407609840994390629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7dcdf282b8cf24cab9735d6747a12c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f001648489b6ce459ee45ebec580c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player1: 0
   Player2: 0
-  platform: {fileID: 0}
+  door: {fileID: 0}
 --- !u!1 &5821718785773271550
 GameObject:
   m_ObjectHideFlags: 0

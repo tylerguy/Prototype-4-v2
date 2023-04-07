@@ -16,6 +16,7 @@ public class TwoPlayerButton : MonoBehaviour
     {
         if (Player1 && Player2)
         {
+
             Debug.Log("Both players are ready");
             platform.GetComponent<WaypointManager>().active = true;
 
