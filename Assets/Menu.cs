@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class Menu : MonoBehaviour
 {
@@ -50,7 +51,10 @@ public class Menu : MonoBehaviour
 
     public void menu()
     {
+
         SceneManager.LoadScene("Menu");
+        EditorApplication.isPlaying = false;
+
     }
 
 
