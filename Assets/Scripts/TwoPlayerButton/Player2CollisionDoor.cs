@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Player2CollisionDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
     public GameObject door;
-    void Start()
+
+    void OnCollisionEnter(Collision collision)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        door.GetComponent<TwoPlayerDoorController>().Player2 = true;
-
+        if (collision.gameObject.tag == "Player 2")
+        {
+            Debug.Log("Player 2 is ready");
+            door.GetComponent<TwoPlayerDoorController>().Player2 = true;
+        }
     }
 }

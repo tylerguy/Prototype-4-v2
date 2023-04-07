@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647551859957467703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 9.8}
+  m_LocalPosition: {x: -0.87, y: 0, z: 9.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43,11 +43,11 @@ GameObject:
   - component: {fileID: 8195265865377474116}
   - component: {fileID: 4943369849422167647}
   - component: {fileID: 689390238960775818}
-  - component: {fileID: 8438623527472534556}
+  - component: {fileID: 7687465181665370478}
   - component: {fileID: 8579968142261756418}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Player 2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3930116238282519070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.62, y: 0.227, z: -12.662}
+  m_LocalPosition: {x: -9.55, y: 0.227, z: -12.66}
   m_LocalScale: {x: 2, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117,7 +117,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8438623527472534556
+--- !u!114 &7687465181665370478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,10 +126,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3930116238282519070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c3df75db51d5541be1d8186889962a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0abdcef253aae61438468bce8ab928a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoPlayerButton: {fileID: 5407609840994390629}
+  door: {fileID: 5407609840994390629}
 --- !u!65 &8579968142261756418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -152,7 +152,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7358833665133029242}
-  - component: {fileID: 1082079845}
   - component: {fileID: 5805904388967827995}
   m_Layer: 0
   m_Name: Two Player Door
@@ -178,19 +177,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1082079845
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5407609840994390629}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 0.5, z: 2}
-  m_Center: {x: -10.6, y: 0, z: -2.9}
 --- !u!114 &5805904388967827995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5821718785773271550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.09, y: 0, z: -5.6}
+  m_LocalPosition: {x: -0.847, y: 0, z: -2.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -249,11 +235,11 @@ GameObject:
   - component: {fileID: 4011809200127743373}
   - component: {fileID: 184015897270701462}
   - component: {fileID: 5730431476140835139}
-  - component: {fileID: 2068550726607212910}
+  - component: {fileID: 9111892756829676158}
   - component: {fileID: 29197024657924531}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Player 1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -323,7 +309,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2068550726607212910
+--- !u!114 &9111892756829676158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,10 +318,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8114697291591680471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a6a00b83005ca14791285be4354b99e, type: 3}
+  m_Script: {fileID: 11500000, guid: a9d4917bff5cd9249978e8ecda15f423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoPlayerButton: {fileID: 5407609840994390629}
+  door: {fileID: 5407609840994390629}
 --- !u!65 &29197024657924531
 BoxCollider:
   m_ObjectHideFlags: 0
