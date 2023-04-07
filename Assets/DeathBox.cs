@@ -23,5 +23,7 @@ public class DeathBox : MonoBehaviour
         GameObject lastCheckPoint = GameObject.Find("CheckPointManager").GetComponent<CheckPointManager>().lastCheckPoint;
         // move player to last checkpoint
         other.gameObject.transform.position = lastCheckPoint.transform.position;
+        // set player camera rotation to look forward
+        other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }

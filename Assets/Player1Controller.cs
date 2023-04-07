@@ -23,6 +23,9 @@ public class Player1Controller : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         // lock the cursor
         Cursor.lockState = CursorLockMode.Locked;
+        // set cursor position to center of screen
+        Cursor.visible = false;
+        cam.transform.rotation = Quaternion.Euler(0, 0, 0);
 
     }
     void OnCollisionEnter(Collision collision)

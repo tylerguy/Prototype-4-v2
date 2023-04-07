@@ -21,6 +21,8 @@ public class Player2Controller : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        cam.transform.rotation = Quaternion.Euler(0, 0, 0);
+
 
     }
     void OnCollisionEnter(Collision collision)
