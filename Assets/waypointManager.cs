@@ -31,6 +31,7 @@ public class WaypointManager : MonoBehaviour
     {
         if (active)
         {
+            GetComponent<Platform>().isMoving = true;
             // move the platform to the next waypoint
             transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint], speed * Time.deltaTime);
             // if the platform has reached the waypoint
@@ -53,5 +54,6 @@ public class WaypointManager : MonoBehaviour
             }
 
         }
+        GetComponent<Platform>().isMoving = true;
     }
 }

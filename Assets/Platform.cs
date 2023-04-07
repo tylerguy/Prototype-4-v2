@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public float speed = 0.5f;
     public bool isMoving = false;
 
-    public Rigidbody rb;
-
-    private int currentWaypoint = 0;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +23,7 @@ public class Platform : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player 1" || collision.gameObject.tag == "Player 2")
         {
             collision.gameObject.transform.parent = transform;
         }
@@ -34,7 +31,7 @@ public class Platform : MonoBehaviour
 
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player 1" || collision.gameObject.tag == "Player 2")
         {
             collision.gameObject.transform.parent = null;
         }
